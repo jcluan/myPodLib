@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'myPodLib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of myPodLib.'
+  s.summary          = 'just test'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  i'm testting, ok?
                        DESC
 
   s.homepage         = 'https://github.com/jcluan/myPodLib'
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'myPodLib' => ['myPodLib/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'myPodLib/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'MapKit'
+  s.dependency 'MJRefresh', '~> 3.1.12'
 end
