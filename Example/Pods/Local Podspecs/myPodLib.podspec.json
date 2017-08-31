@@ -41,12 +41,7 @@
     {
       "name": "JCLib_B",
       "source_files": "myPodLib/Classes/JCLib_B/**/*",
-      "public_header_files": "myPodLib/Classes/JCLib_B/**/*.h",
-      "dependencies": {
-        "OpenUDID": [
-          "~> 1.0.0"
-        ]
-      }
+      "public_header_files": "myPodLib/Classes/JCLib_B/**/*.h"
     },
     {
       "name": "JCLib_C",

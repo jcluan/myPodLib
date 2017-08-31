@@ -44,7 +44,6 @@ Pod::Spec.new do |s|
   s.subspec 'JCLib_B' do |ss|
     ss.source_files = 'myPodLib/Classes/JCLib_B/**/*'
     ss.public_header_files = 'myPodLib/Classes/JCLib_B/**/*.h'
-    ss.dependency 'OpenUDID', '~> 1.0.0'
   end
 
   s.subspec 'JCLib_C' do |ss|

@@ -28,11 +28,9 @@ PODS:
   - myPodLib/JCLib (1.0.0):
     - AFNetworking (~> 2.3)
   - myPodLib/JCLib_A (1.0.0)
-  - myPodLib/JCLib_B (1.0.0):
-    - OpenUDID (~> 1.0.0)
+  - myPodLib/JCLib_B (1.0.0)
   - myPodLib/JCLib_C (1.0.0):
     - myPodLib/JCLib_B
-  - OpenUDID (1.0.0)
 
 DEPENDENCIES:
   - myPodLib (from `../`)
@@ -43,8 +41,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  myPodLib: 396f91273681834ec0704fc469e7923d76a86bd2
-  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  myPodLib: 52f1194a52be80571db8c24ad9fd03ab1da53bfe
 
 PODFILE CHECKSUM: 4193a4f5903490292da9e090b878f2a1bb5986d6
 
