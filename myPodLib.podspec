@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'myPodLib'
-  s.version          = '1.0.0'
+  s.version          = '2.0.0'
   s.summary          = 'just test'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.subspec 'JCLib' do |ss|
     ss.source_files = 'myPodLib/Classes/JCLib/**/*'
     ss.public_header_files = 'myPodLib/Classes/JCLib/**/*.h'
-    ss.dependency 'AFNetworking', '~> 2.3'
+    ss.dependency 'AFNetworking', '~> 3.0'
   end
 
   s.subspec 'JCLib_A' do |ss|

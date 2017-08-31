@@ -1,35 +1,29 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - myPodLib (1.0.0):
-    - myPodLib/JCLib (= 1.0.0)
-    - myPodLib/JCLib_A (= 1.0.0)
-    - myPodLib/JCLib_B (= 1.0.0)
-    - myPodLib/JCLib_C (= 1.0.0)
-  - myPodLib/JCLib (1.0.0):
-    - AFNetworking (~> 2.3)
-  - myPodLib/JCLib_A (1.0.0)
-  - myPodLib/JCLib_B (1.0.0)
-  - myPodLib/JCLib_C (1.0.0):
+  - myPodLib (2.0.0):
+    - myPodLib/JCLib (= 2.0.0)
+    - myPodLib/JCLib_A (= 2.0.0)
+    - myPodLib/JCLib_B (= 2.0.0)
+    - myPodLib/JCLib_C (= 2.0.0)
+  - myPodLib/JCLib (2.0.0):
+    - AFNetworking (~> 3.0)
+  - myPodLib/JCLib_A (2.0.0)
+  - myPodLib/JCLib_B (2.0.0)
+  - myPodLib/JCLib_C (2.0.0):
     - myPodLib/JCLib_B
 
 DEPENDENCIES:
@@ -40,8 +34,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  myPodLib: 52f1194a52be80571db8c24ad9fd03ab1da53bfe
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  myPodLib: 28f1794abd1d06f388930f1975368bce8c7c7648
 
 PODFILE CHECKSUM: 4193a4f5903490292da9e090b878f2a1bb5986d6
 
