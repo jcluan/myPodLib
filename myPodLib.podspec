@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'myPodLib'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'just test'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,36 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'myPodLib/Classes/**/*'
+  s.subspec 'JCLib' do |ss|
+    ss.source_files = 'myPodLib/Classes/JCLib/**/*'
+    ss.public_header_files = 'myPodLib/Classes/JCLib/**/*.h'
+    ss.dependency 'AFNetworking', '~> 2.3'
+  end
+
+  s.subspec 'JCLib_A' do |ss|
+    ss.source_files = 'myPodLib/Classes/JCLib_A/**/*'
+    ss.public_header_files = 'myPodLib/Classes/JCLib_A/**/*.h'
+  end
+
+  s.subspec 'JCLib_B' do |ss|
+    ss.source_files = 'myPodLib/Classes/JCLib_B/**/*'
+    ss.public_header_files = 'myPodLib/Classes/JCLib_B/**/*.h'
+    ss.dependency 'OpenUDID', '~> 1.0.0'
+  end
+
+  s.subspec 'JCLib_C' do |ss|
+    ss.source_files = 'myPodLib/Classes/JCLib_C/**/*'
+    ss.public_header_files = 'myPodLib/Classes/JCLib_C/**/*.h'
+    ss.dependency 'myPodLib/JCLib_B'
+  end
+
+  #s.source_files = 'myPodLib/Classes/**/*'
   
   # s.resource_bundles = {
   #   'myPodLib' => ['myPodLib/Assets/*.png']
   # }
 
-  s.public_header_files = 'myPodLib/Classes/**/*.h'
+  #s.public_header_files = 'myPodLib/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'MJRefresh', '~> 3.1.12'
+  #s.dependency 'MJRefresh', '~> 3.1.12'
 end

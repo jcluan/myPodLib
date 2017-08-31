@@ -1,8 +1,8 @@
 {
   "name": "myPodLib",
-  "version": "0.1.0",
-  "summary": "A short description of myPodLib.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "just test",
+  "description": "i'm testting, ok?",
   "homepage": "https://github.com/jcluan/myPodLib",
   "license": {
     "type": "MIT",
@@ -13,10 +13,50 @@
   },
   "source": {
     "git": "https://github.com/jcluan/myPodLib.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "myPodLib/Classes/**/*"
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "subspecs": [
+    {
+      "name": "JCLib",
+      "source_files": "myPodLib/Classes/JCLib/**/*",
+      "public_header_files": "myPodLib/Classes/JCLib/**/*.h",
+      "dependencies": {
+        "AFNetworking": [
+          "~> 2.3"
+        ]
+      }
+    },
+    {
+      "name": "JCLib_A",
+      "source_files": "myPodLib/Classes/JCLib_A/**/*",
+      "public_header_files": "myPodLib/Classes/JCLib_A/**/*.h"
+    },
+    {
+      "name": "JCLib_B",
+      "source_files": "myPodLib/Classes/JCLib_B/**/*",
+      "public_header_files": "myPodLib/Classes/JCLib_B/**/*.h",
+      "dependencies": {
+        "OpenUDID": [
+          "~> 1.0.0"
+        ]
+      }
+    },
+    {
+      "name": "JCLib_C",
+      "source_files": "myPodLib/Classes/JCLib_C/**/*",
+      "public_header_files": "myPodLib/Classes/JCLib_C/**/*.h",
+      "dependencies": {
+        "myPodLib/JCLib_B": [
+
+        ]
+      }
+    }
+  ]
 }

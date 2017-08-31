@@ -11,6 +11,9 @@
 #endif
 
 #import "JCLib.h"
+#import "JCLib_A.h"
+#import "JCLib_B.h"
+#import "JCLib_C.h"
 
 FOUNDATION_EXPORT double myPodLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char myPodLibVersionString[];
